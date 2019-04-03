@@ -101,10 +101,10 @@ fig.show()
 
 def policy(s, t):
     # YOUR CODE HERE
-    if t < TIME_LIMIT - 10:
-        a = 'right'
+    if t < TIME_LIMIT/4:
+        a = 'left'
     else:
-        a = 'stop'
+        a = 'right'
     return actions[a]
 
 
